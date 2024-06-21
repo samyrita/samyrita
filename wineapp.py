@@ -1,11 +1,10 @@
 import streamlit as st
 import numpy as np
-import pyspark as psp
-from psp.sql import SparkSession
-from psp.ml.feature import VectorAssembler, StandardScalerModel, PCAModel
-from psp.ml.regression import RandomForestRegressionModel
-from psp.sql import Row
-from psp.ml.linalg import Vectors
+from pyspark.sql import SparkSession
+from pyspark.ml.feature import VectorAssembler, StandardScalerModel, PCAModel
+from pyspark.ml.regression import RandomForestRegressionModel
+from pyspark.sql import Row
+from pyspark.ml.linalg import Vectors
 
 # Create a Spark session (if not already running)
 spark = SparkSession.builder.appName("WineQualityPrediction").getOrCreate()
