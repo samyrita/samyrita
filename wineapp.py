@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-pip install pyspark
+!pip install pyspark
 import pyspark as psp
 from psp.sql import SparkSession
 from psp.ml.feature import VectorAssembler, StandardScalerModel, PCAModel
