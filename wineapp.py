@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import pypsark
+import pyspark
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import VectorAssembler, StandardScalerModel, PCAModel
 from pyspark.ml.regression import RandomForestRegressionModel
