@@ -58,10 +58,5 @@ prediction = model.transform(input_df).select("prediction").collect()[0][0]
 st.subheader("Predicted Wine Quality:")
 st.write(prediction)
 
-# --- Expose with ngrok ---
-
-!ngrok config add-authtoken 2iCA4CxbANL1g3rEyWNF5tMhFuj_2HMp6iM4j3RTL3ns7QcAq
-from pyngrok import ngrok
-
-# Use the set_auth_token method
-ngrok.set_auth_token("2iCA4CxbANL1g3rEyWNF5tMhFuj_2HMp6iM4j3RTL3ns7QcAq")
+#Debug de la app
+!streamlit run /content/wineapp.py 
