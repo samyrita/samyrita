@@ -58,4 +58,4 @@ prediction = model.transform(input_df).select("prediction").collect()[0][0]
 st.subheader("Predicted Wine Quality:")
 st.write(prediction)
 
-!streamlit run /samyrita/wineapp.py
+
